@@ -15,13 +15,13 @@ Un usuario tienen intencion de cambiar DAI por Dodge, cuando @elonmusk realiza u
 - Se distribuye la orden.
 
 ![User](./f-user.png "User")
-- Se 
+
 ## Flujo de Robot de Sentimientos (ROS)
 Este robot se encarga de manterner actualizado los oraculos que se utilzan en los intents de los usuarios.
 
 - El bot obtiene los twitts de @elonmusk.
 - Se envia el twitt de @elonmusk a ChatGPT para analizar sus sentimientos. 
-- Si el sentimiento del twitt es positivo, se actualiza un oracle onChain.
+- Si el sentimiento del twitt es positivo, con respecto al token elegido, se actualiza un oracle onChain.
 
 
 ![Robot of Sentiments](./f-ros.png "Ros")
@@ -29,8 +29,8 @@ Este robot se encarga de manterner actualizado los oraculos que se utilzan en lo
 ## Flujo de Solver
 El solver es una aplicación encargada de validar las condiciones establecidas por el usuario, encontrar una forma costo/efectiva de ejecutar el swap.
 
-- Se obtien un Intent que no fue ejecutado de un libro de ordenes.
-- Se validan las condiciones del swap. Que sea un periodod valido, que el user tenga fondos, que exista un posible swap route, etc. Además se valida la condicion del evento offchain. En este ejemplo, ROS ya actualizo el Oracle y se cumplen las condiciones
+- Se obtiene un Intent que no fue ejecutado de un libro de ordenes.
+- Se validan las condiciones del swap. Que sea un periodo valido, que el user tenga fondos, que exista un posible swap route, etc. Además se valida la condicion del evento offchain. En este ejemplo, ROS ya actualizo el Oracle y se cumplen las condiciones
 - Se obtine la mejor ruta para realizar el swap en UNI, en la que el usuario y Solver reciben más DODGE.
 - El Solver envia la transacción para ser ejecutada.
 
