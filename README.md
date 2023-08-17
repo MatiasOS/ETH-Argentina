@@ -5,7 +5,7 @@ A continuación se explica el funcionamiento de los actores y componentes de la 
 ## Flujo de ususario
 Un usuario tienen intencion de cambiar DAI por Dodge, cuando @elonmusk realiza un twitt con sentimiento positvo sobre Dodge Coin.
 
--  El usuario fondea se smart wallet. De esta wallet se van a utilzar los fondos para la orden condicional.
+-  El usuario fondea su smart wallet. De esta wallet se van a utilzar los fondos para la orden condicional.
 
 - El usuario firma un mensaje utilinzado [Brink](https://brink.trade), que representa su intencion: 
     - Realizar un market swap en uni de DAI > Dodge. 
